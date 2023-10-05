@@ -13,15 +13,19 @@
 // createGridItems();
 //     }
 // }
-
-let board = document.getElementById('container');
-board.style.gridTemplateColumns = "repeat(16 , 1fr)";
-board.style.gridTemplateRows = "repeat(16 , 1fr)";
-
-for (let i = 0; i < 16 * 16; i++) {
-    let gridItem = document.createElement('div');
-    gridItem.className = 'grid-items';
-    gridItem.style.backgroundColor = "red";
-    board.appendChild(gridItem);
-
+function createGridItems(size) {
+    let board = document.getElementById('container');
+    board.style.gridTemplateColumns = `repeat(${size} , 1fr)`;
+    board.style.gridTemplateRows = `repeat(${size} , 1fr)`;
+    
+    for (let i = 0; i < 16 * 16; i++) {
+        let gridItem = document.createElement('div');
+        gridItem.className = 'grid-items';
+        gridItem.style.backgroundColor = "red";
+        board.appendChild(gridItem);
+    
+    }
+    
 }
+createGridItems(16);
+
