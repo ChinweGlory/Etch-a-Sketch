@@ -10,21 +10,20 @@
     <div class="flex-container">
         <div class="title">Etch-a-Sketch</div>
         <div id="content">
-      <div>
-        <label for="color">Color</label>
-        <input type="color" class="color" />
-      </div>
-      <div>
+  
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="colorPicker" />
+      
+      
         <label for="columnSelector">Set Size:</label>
         <input type="text" id="selector"value="16" />
         <button id="setSizeButton">ok</button>
-      </div>
+      
       <div id="container"></div>
-      <div>
-      <button>Create Grid</button>
-      <button>Erase</button>
-      <button>Randon Colors</button>
-    </div>
+      <input type="color" id="mouseover-color-picker" />
+    <button id="erase-button">Erase</button>
+    <button id="random-color-button">Random Color</button>
+      
         </div>
 
     <script src="script.js"></script>

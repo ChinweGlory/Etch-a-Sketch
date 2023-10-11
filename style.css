@@ -2,4 +2,62 @@
     width: 500px;
     height: 500px;
     display: grid;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.flex-container {
+    display: grid;
+    place-items: center;
+    height: 100vh; /* Ensure the container is centered vertically */
+    margin: 0; 
+}
+
+.title {
+    font-size: 36px;
+    color: red;
+    
+}
+
+input {
+    width: 100px;
+    height: 25px;
+  }
+  
+  button {
+    background-color: rgba(169, 26, 26, 0.317);
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+  }
+
+  .grid-item {
+    width: 100%;
+    padding-top: 100%;
+    
+  }
+
+  .grid-items {
+    border: 1px solid black;
+ 
+
+  }
+  
+  #setSizeButton {
+    width: 80px;
+    
+  }
+
+  #colorPicker {
+    margin-right: 40px;
+  }
+
+  label {
+    color: red;
+    font-size: 24px;
+  }
